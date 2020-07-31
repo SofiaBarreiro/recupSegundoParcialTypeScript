@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./src/index.js"></script>
+    <!-- <script src="./src/vehiculo.js"></script>
+    <script src="./src/auto.js"></script>
+    <script src="./src/camioneta.js"></script> -->
+    <script src="./src/logica.js"></script>
+
+    <title>Recuperatorio parcial de laboratorio 3</title>
+</head>
+
+<body id="body"><div id="Select">
+   
+</div>
+   
+   
+    <div id="zonaTablas" hidden>
+        <table id="tablaFila1">
+            <tr><td style="text-align: left;">
+                <button id="agregar">Agregar</button>
+                
+            </td>
+            <td style="text-align: left;">
+                    <h1>Lista de vehiculos</h1>
+            </td>
+        </tr>
+
+        </table>
+        
+      
+    
+    
+        <div id="Select">
+            <label for="">Filtrar por: </label>
+    
+            <select name="" id="selectVehiculo">
+                <option value="Auto">Autos</option>
+                <option value="Camioneta">Camionetas</option>
+            </select>
+    
+        </div>
+        <div id="filtradoCheck">
+            <label for="">Filtrar por: </label>
+            <input type="checkbox" name="ID" id="chID"><label for="">ID</label>
+            <input type="checkbox" name="Marca" id="chMarca"><label for="">Marca</label>
+            <input type="checkbox" name="Modelo" id="chModelo"><label for="">Modelo</label>
+            <input type="checkbox" name="Precio" id="chPrecio"><label for="">Precio</label>
+    
+        </div>
+        <div id="FilaPromedio">
+            <label for=""> Promedio de Precios</label><input type="text" name=""disabled="true"  id="inputPrecio"> <button id="botonPrecio">Calcular
+                Promedio</button>
+        </div>
+        
+            <table id="tablaAutos">
+            </table>
+            <table id="tablaCamionetas" hidden>
+            </table>
+
+    </div>
+    
+
+
+
+    <center>
+        <form id="form" action="" hidden>
+            <table>
+                <tr><td><label for="">ID: </label> <input disabled="true" type="text" name="" id="inputID"></td></tr>
+                <tr><td><label for="">Marca:</label> <input type="text" name="" id="inputMarca"></td></tr>
+                <tr><td><label for="">Modelo:</label> <input type="text" name="" id="inputModelo"></td></tr>
+                <tr><td><label for="">Precio:</label> <input type="text" name="" id="inputPrecioForm"></td></tr>
+                <tr>
+                   <td>
+                    <select name="" id="selectVehiculoForm">
+                        <option value="Auto">Autos</option>
+                        <option value="Camioneta">Camionetas</option>
+                    </select>
+                   </td></tr>
+                <tr id="filaCheck"  hidden><td><label for="">4x4</label><input type="checkbox" name="esCuatroXCuatro" id="chC4x4"></td></tr>
+                <tr id="filaSelect"><td>
+                    <label for="">Cantidad de puertas:</label> <input type="number" name="" id="inputCantPuertas">
+                </td></tr>
+                    <tr><td>
+                        <button id="guardar">Guardar</button><button id="cerrar">Cerrar</button>
+                    </td></tr>
+
+            </table>
+          
+        </form>
+    </center>
+    
+
+
+
+</body>
+
+</html>
