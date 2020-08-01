@@ -17,7 +17,10 @@ var General;
         __extends(Cliente, _super);
         function Cliente(id, nombre, apellido, edad, sexo) {
             var _this = _super.call(this, id, nombre, apellido) || this;
-            _this.edad = edad;
+            _this.edad = 0;
+            if (!isNaN(edad)) {
+                _this.edad = edad;
+            }
             _this.sexo = sexo;
             return _this;
         }

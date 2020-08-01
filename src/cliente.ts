@@ -2,19 +2,24 @@ namespace General{
 
     export class Cliente extends Persona{
 
-        private edad: number;
+        private edad: number = 0;
         private sexo: Sexo;
 
-
+       
         public constructor(id: number, nombre: string, apellido: string, edad: number, sexo:Sexo) {
             super(id, nombre, apellido);
 
-            this.edad = edad;
+            if(!isNaN(edad)){
+                this.edad = edad;
+
+            }
+
             this.sexo = sexo;
 
 
         }
 
+       
         public getEdad(): number {
 
             return this.edad;
@@ -41,13 +46,14 @@ namespace General{
         }
 
     }
-    
     export enum Sexo{
         Femenino,
         Masculino
 
 
     }
+
+    
 
 
 }

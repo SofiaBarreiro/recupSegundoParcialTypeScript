@@ -2,7 +2,12 @@ var General;
 (function (General) {
     var Persona = /** @class */ (function () {
         function Persona(id, nombre, apellido) {
-            this.id = id;
+            this.id = 0;
+            this.nombre = "";
+            this.apellido = "";
+            if (!isNaN(id)) {
+                this.id = id;
+            }
             this.nombre = nombre;
             this.apellido = apellido;
         }

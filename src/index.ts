@@ -9,8 +9,6 @@ namespace General {
 
 
         agregarEventosCheckBox();
-
-
         const nuevaLogica: logica = new logica();
 
 

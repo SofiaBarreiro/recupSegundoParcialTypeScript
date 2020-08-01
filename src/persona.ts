@@ -2,14 +2,17 @@ namespace General{
 
     export class Persona {
 
-        private id: number;
-        private nombre: string;
-        private apellido: string;
+        private id: number = 0;
+        private nombre: string = "";
+        private apellido: string = "";
 
 
         public constructor(id: number, nombre: string, apellido: string) {
 
-            this.id = id;
+
+            if(!isNaN(id)){
+                this.id = id;
+            }
             this.nombre = nombre;
             this.apellido = apellido;
 
