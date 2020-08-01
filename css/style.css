@@ -5,8 +5,7 @@
 }
 
 
-#tablaAutos,
-#tablaCamionetas {
+#tablaPersonas {
 
     width: 50%;
     margin: auto;
@@ -42,10 +41,10 @@ button, #filtradoCheck, #FilaPromedio, #Select{
 
 }
 
-#tablaAutos>tr,
-#tablaAutos>td,
+#tablaPersonas>tr,
+#tablaPersonas>td,
 #tablaAutos>th
-#tablaAutos>thead
+#tablaPersonas>thead
 
 /* #tablaCamionetas > tr, #tablaCamionetas > td, #tablaCamionetas > th */
     {

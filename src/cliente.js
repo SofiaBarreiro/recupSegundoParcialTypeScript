@@ -38,7 +38,7 @@ var General;
     General.Cliente = Cliente;
     var Sexo;
     (function (Sexo) {
-        Sexo[Sexo["Mujer"] = 0] = "Mujer";
-        Sexo[Sexo["Hombre"] = 1] = "Hombre";
-    })(Sexo || (Sexo = {}));
+        Sexo[Sexo["Femenino"] = 0] = "Femenino";
+        Sexo[Sexo["Masculino"] = 1] = "Masculino";
+    })(Sexo = General.Sexo || (General.Sexo = {}));
 })(General || (General = {}));

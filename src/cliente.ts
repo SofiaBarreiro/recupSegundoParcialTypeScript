@@ -6,7 +6,6 @@ namespace General{
         private sexo: Sexo;
 
 
-
         public constructor(id: number, nombre: string, apellido: string, edad: number, sexo:Sexo) {
             super(id, nombre, apellido);
 
@@ -42,9 +41,10 @@ namespace General{
         }
 
     }
-    enum Sexo{
-        Mujer,
-        Hombre
+    
+    export enum Sexo{
+        Femenino,
+        Masculino
 
 
     }
